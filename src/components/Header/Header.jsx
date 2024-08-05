@@ -68,7 +68,7 @@ const Header = () => {
             id="navbarSupportedContent"
           >
             <div className="mx-auto fs-18">
-              <ul className="navbar-nav">
+              <ul className="navbar-nav py-3">
                 <li className="nav-item mx-3">
                   <NavLink
                     to="/"
@@ -111,10 +111,10 @@ const Header = () => {
               </ul>
             </div>
             <div className="fs-18">
-              <ul className="navbar-nav">
+              <ul className="navbar-nav py-3">
                 <NavLink
                   to="/login"
-                  className="nav-link c_fff me-4"
+                  className="nav-link c_fff me-md-5 mx-3"
                   activeClassName="active"
                 >
                   Login
