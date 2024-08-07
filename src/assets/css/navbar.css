@@ -11,10 +11,14 @@
   box-shadow: none;
 }
 
-/* .nav-link.active {
-  font-weight: bold;
-  color: #fff !important;
-} */
+.nav-link.active {
+  /* font-weight: bold; */
+  color: #000000 !important;
+}
+
+.navbar {
+  border-bottom: 1px solid #cccccc;
+}
 
 @media screen and (max-width: 991px) {
   .navbar-collapse.collapse:not(.show) {
@@ -51,10 +55,31 @@
   .nav-overlay.active {
     transform: translateX(0);
   }
+
+  .nav-link.active {
+    /* font-weight: bold; */
+    color: #ffffff !important;
+  }
+
+  .nav-link {
+    color: #ffffff !important;
+  }
+
+  .cart-icon {
+    color: #ffffff !important;
+  }
 }
 
 .fs-18 {
   font-size: 18px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-24 {
+  font-size: 24px;
 }
 
 .fs-26 {
@@ -66,31 +91,35 @@
 }
 
 .b_FFFFFF {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+}
+
+.b_fcfcfc {
+  background-color: #fcfcfc;
 }
 
 .c_fff {
   color: #fff;
 }
 
-.logo-main {
-  width: 100%;
-  max-width: 100px;
+.c_000 {
+  color: #000;
 }
 
-.cart-icon:hover {
-  color: #fff;
+.logo-main {
+  width: 100%;
+  max-width: 150px;
 }
 
 .nav-link {
   position: relative;
   display: inline-block;
   padding-bottom: 5px;
-  color: #fff;
+  color: #000000;
   text-decoration: none;
 }
 
-.nav-link::after {
+/* .nav-link::after {
   content: '';
   position: absolute;
   width: 0;
@@ -98,7 +127,7 @@
   display: block;
   margin-top: 5px;
   left: 0;
-  background: #fff;
+  background: #000000;
   transition: width 0.4s ease, left 0.4s ease;
 }
 
@@ -110,4 +139,79 @@
 .nav-link.active::after {
   width: 100%;
   right: 0;
+} */
+
+.navbar-nav input {
+  border-radius: 62px;
+  background-color: #f0f0f0;
+  font-size: 14px;
+  padding: 10px 80px 10px 50px;
+  border: none;
+}
+
+.search-input {
+  background-color: #00000066;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+.search-input::placeholder {
+  color: #00000066;
+  opacity: 1;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-input {
+  width: 100%;
+  padding-right: 40px; /* Make room for the button inside the input */
+  color: #00000066;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.search-button {
+  position: absolute;
+  left: 15px;
+  top: 22px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #00000066;
+  font-size: 20px; /* Adjust icon size */
+}
+
+.search-button:focus {
+  outline: none;
+}
+
+.login-btn {
+  border: 1px solid #192c3d;
+  width: Hug (121px);
+  height: Hug (53px);
+  border-radius: 8px;
+  padding: 12px 32px;
+  background-color: #fcfcfc;
+  color: #192C3D;
+  font-weight: 500;
+  font-size: 20px;
+  gap: 10px;
+}
+
+.signup-btn {
+  border: 1px solid #192c3d;
+  width: Hug (121px);
+  height: Hug (53px);
+  border-radius: 8px;
+  padding: 12px 32px;
+  background-color: #192C3D;
+  color: #fcfcfc;
+  font-weight: 500;
+  font-size: 20px;
+  gap: 10px;
 }

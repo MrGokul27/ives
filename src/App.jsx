@@ -9,6 +9,8 @@ import ProductDetail from './pages/ProductDetail';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Contact from './pages/Contact';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
   return (
