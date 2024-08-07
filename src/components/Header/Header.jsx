@@ -3,15 +3,6 @@ import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/css/navbar.css";
 import logo from "../../assets/images/logo/create-a-flat-vector-illustrative-style-wordmark-l-g4AGv1XyRiy7KqLxZOhJVg-_lPGm5SRQ1u6r5GNrPDeFQ1.jpeg";
-import {
-  FaHome,
-  FaInfoCircle,
-  FaConciergeBell,
-  FaPhone,
-  FaSignInAlt,
-  FaUserPlus,
-  FaShoppingCart,
-} from "react-icons/fa";
 
 const Header = () => {
   const [navOverlayActive, setNavOverlayActive] = useState(false);
@@ -142,7 +133,7 @@ const Header = () => {
                   className="nav-link"
                   activeClassName="active"
                 >
-                  <button className="signup-btn me-md-5">Sign Up</button>
+                  <button className="signup-btn me-xl-5">Sign Up</button>
                 </NavLink>
               </ul>
             </div>
