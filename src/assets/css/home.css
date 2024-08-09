@@ -1,6 +1,6 @@
 .fs-20 {
-    font-size: 20px;
-  }
+  font-size: 20px;
+}
 
 #hero-background-img {
   border-radius: 24px;
@@ -32,6 +32,10 @@
   background: none;
 }
 
+#section-home-1 {
+  margin-top: 5% !important;
+}
+
 #section-home-1 h2 {
   font-weight: 500;
   font-size: 42px;
@@ -55,10 +59,241 @@
 }
 
 .home-shop-btn {
-    background-color: #192C3D;
-    font-size: 16px;
+  background-color: #192c3d;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  padding: 18px 32px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.home-shop-btn:hover {
+  background-color: #be9e6f;
+  transition: 0.5s;
+}
+
+.home-arrival-btn {
+  border: 1.5px solid #bfa77b;
+  background-color: #be9e6f1a;
+  color: #bfa77b;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 16px;
+}
+
+#section-home-2 h2 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: start;
+}
+
+#section-home-2 .bi-arrow-left {
+  box-shadow: 0px 4px 20px 0px #0000001a;
+}
+
+#section-home-2 p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: start;
+}
+
+#section-home-2 .fa-heart {
+  color: #767574;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.card-add-to-icon {
+  top: 5%;
+  right: 20%;
+}
+
+.home-card-title,
+.home-card-price {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+.home-slider-card {
+  padding: 0 70px 0 0;
+}
+
+.home-card-rating {
+  color: #be9e6f;
+}
+
+@media (min-width: 300px) and (max-width: 1400px) {
+  .home-slider-card {
+    padding: 0 30px 0 30px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 1200px) {
+  .bi-arrow-left {
+    color: #192c3d;
+    background-color: #ffffff;
+    padding: 12px 15px;
+    border-radius: 50%;
+    font-size: 15px;
+  }
+
+  .home-arrow .bi-arrow-right {
     color: #ffffff;
-    border: none;
-    padding: 18px 32px;
-    border-radius: 8px;
+    background-color: #192c3d;
+    padding: 12px 15px;
+    border-radius: 50%;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  #section-home-1 {
+    margin-top: 30% !important;
+  }
+
+  #section-home-1 h2 {
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+
+  #section-home-1 p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 7px;
+  }
+
+  .home-heading {
+    top: 10%;
+    left: 3%;
+  }
+
+  .home-shop-btn {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  #home-arr .bi-arrow-left {
+    padding: 8px 12px;
+    font-size: 15px;
+  }
+
+  #home-arr .bi-arrow-right {
+    padding: 8px 12px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  #section-home-1 {
+    margin-top: 20% !important;
+  }
+
+  #section-home-1 h2 {
+    font-size: 26px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+
+  #section-home-1 p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .home-heading {
+    top: 15%;
+    left: 3%;
+  }
+
+  .home-shop-btn {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  #section-home-1 {
+    margin-top: 15% !important;
+  }
+
+  #section-home-1 h2 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  #section-home-1 p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .home-heading {
+    top: 18%;
+    left: 3%;
+  }
+
+  .home-shop-btn {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  #section-home-1 {
+    margin-top: 10% !important;
+  }
+
+  #section-home-1 h2 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  #section-home-1 p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .home-heading {
+    top: 23%;
+    left: 3%;
+  }
+
+  .home-shop-btn {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+  #section-home-1 {
+    margin-top: 10% !important;
+  }
+
+  #section-home-1 h2 {
+    font-size: 34px;
+    line-height: 35px;
+    margin-bottom: 10px;
+  }
+
+  #section-home-1 p {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 25px;
+  }
+
+  .home-heading {
+    top: 23%;
+    left: 3%;
+  }
+
+  .home-shop-btn {
+    font-size: 14px;
+    padding: 15px 15px;
+  }
 }

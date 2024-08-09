@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="navbar navbar-expand-lg b_fcfcfc ps-md-5 lufga">
+      <nav className="navbar navbar-expand-lg b_fcfcfc ps-md-5 lufga position-fixed top-0">
         <div className="container-fluid">
           <NavLink to="/" className="navbar-brand">
             <img src={logo} alt="logo" className="img-fluid logo-main" />
@@ -60,7 +60,16 @@ const Header = () => {
           >
             <div className="mx-auto fs-22">
               <ul className="navbar-nav align-items-center">
-                <li className="nav-item mx-3">
+                <li className="nav-item mx-3 d-none nav-logo-mobile">
+                  <NavLink to="/" className="navbar-brand">
+                    <img
+                      src={logo}
+                      alt="logo"
+                      className="img-fluid logo-main"
+                    />
+                  </NavLink>
+                </li>
+                <li className="nav-item mx-3 nav-item-mobile">
                   <NavLink
                     to="/"
                     className="nav-link"
@@ -106,12 +115,7 @@ const Header = () => {
             </div>
             <div className="mx-end">
               <ul className="navbar-nav align-items-center">
-                
-                <NavLink
-                  to=""
-                  className="nav-link"
-                  activeClassName="active"
-                >
+                <NavLink to="" className="nav-link" activeClassName="active">
                   <i className="far fa-heart fs-24 me-md-2 mt-md-1"></i>
                 </NavLink>
                 <NavLink
