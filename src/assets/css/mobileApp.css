@@ -1,0 +1,20 @@
+#section-Mobile-app .card {
+  background-color: #192c3d;
+  border-radius: 42px;
+}
+
+#section-Mobile-app h2 {
+  text-align: start;
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 47px;
+}
+
+#section-Mobile-app p {
+  text-align: start;
+  color: #ffffffa3;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}

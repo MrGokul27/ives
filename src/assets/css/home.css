@@ -2,6 +2,10 @@
   font-size: 20px;
 }
 
+.b_F9F9F9 {
+  background-color: #f9f9f9;
+}
+
 #hero-background-img {
   border-radius: 24px;
 }
@@ -82,25 +86,43 @@
   font-size: 16px;
 }
 
-#section-home-2 h2 {
+#section-home-2 h2,
+#section-home-3 h2,
+#section-home-4 h2,
+#section-home-5 h2,
+#section-home-6 h2 {
   font-size: 34px;
   font-weight: 600;
   line-height: 44px;
   text-align: start;
 }
 
-#section-home-2 .bi-arrow-left {
+#section-home-2 .bi-arrow-left,
+#section-home-4 .bi-arrow-left,
+#section-home-6 .bi-arrow-left {
   box-shadow: 0px 4px 20px 0px #0000001a;
 }
 
-#section-home-2 p {
+#section-home-2 p,
+#section-home-3 p {
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
   text-align: start;
 }
 
-#section-home-2 .fa-heart {
+.home-offer-zone-btn {
+  border: 1.5px solid #bfa77b;
+  background-color: #be9e6f1a;
+  color: #bfa77b;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 16px;
+}
+
+#section-home-2 .fa-heart,
+#section-home-4 .fa-heart,
+#section-home-6 .fa-heart {
   color: #767574;
   padding: 15px;
   background-color: #fff;
@@ -124,7 +146,200 @@
 }
 
 .home-card-rating {
-  color: #be9e6f;
+  color: #be9e6f !important;
+}
+
+.home-categories-btn {
+  border: 1.5px solid #bfa77b;
+  background-color: #be9e6f1a;
+  color: #bfa77b;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 16px;
+}
+
+#section-home-3 .card {
+  border-radius: 42px;
+  background-color: #192c3d;
+}
+
+#section-home-3 .home-card-men {
+  min-height: 700px;
+  max-height: 600px;
+  background-image: url("../images/home/Home-category-men.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section-home-3 .home-card-women {
+  min-height: 700px;
+  max-height: 600px;
+  background-image: url("../images/home/Home-category-women.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section-home-3 .home-card-accessories {
+  background-image: url("../images/home/Home-category-accessories.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section-home-3 .home-card-men h2,
+#section-home-3 .home-card-women h2,
+#section-home-3 .home-card-accessories h2 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 44px;
+  color: #ffffff;
+}
+
+#section-home-3 .home-card-men p,
+#section-home-3 .home-card-women p,
+#section-home-3 .home-card-accessories p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #ffffffa3;
+}
+
+#section-home-3 .home-card-men .home-learn-more-btn,
+#section-home-3 .home-card-women .home-learn-more-btn,
+#section-home-3 .home-card-accessories .home-learn-more-btn {
+  color: #ffffff;
+  background-color: #c5c5c5;
+  border: 1px solid #ffffff80;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 31px;
+  padding: 14px 18px;
+  margin: 0 150px 0 0;
+}
+
+.home-card-offerWith {
+  color: #e14b4b;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.home-card-offerWithout {
+  color: #00000080;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-decoration: line-through;
+}
+
+.home-whatwe-offer-btn {
+  border: 1.5px solid #bfa77b;
+  background-color: #be9e6f1a;
+  color: #bfa77b;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 16px;
+}
+
+#section-home-5 .slno {
+  font-size: 36px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #192c3d;
+  padding: 10px 30px;
+  border-radius: 50%;
+}
+
+#section-home-5 h3 {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+#section-home-5 p {
+  color: #00000080;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.we-offer-image {
+  height: 70vh;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.offerImage {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  margin-bottom: 50px;
+  box-shadow: 6px 6px 50px 0px #00000033;
+}
+
+.image-1 {
+  left: 90px;
+  top: -10px;
+}
+
+.image-2 {
+  left: 35px;
+  top: 35px;
+}
+
+.image-3 {
+  left: -20px;
+  top: 80px;
+}
+
+.review h4 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.review .review-content {
+  color: #00000099;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.review .review-date {
+  color: #00000099;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.review button {
+  color: #00000066;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.tick-icon {
+  background-color: #01ab31;
+  color: white;
+  display: inline-block;
+  padding: 0px;
+  margin: 0 5px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-align: center;
+  line-height: 1;
+}
+
+#section-home-5 .card {
+  border-radius: 18px;
+  border: 1px solid #0000001a;
+  background-color: #ffffff;
 }
 
 @media (min-width: 300px) and (max-width: 1400px) {
@@ -187,6 +402,10 @@
     padding: 8px 12px;
     font-size: 15px;
   }
+
+  #section-home-5 {
+    padding: 50px 30px;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
@@ -213,6 +432,15 @@
   .home-shop-btn {
     font-size: 12px;
     padding: 5px 10px;
+  }
+
+  #section-home-3 .home-card-men .home-learn-more-btn,
+  #section-home-3 .home-card-women .home-learn-more-btn {
+    margin: 0 300px 0 0;
+  }
+
+  #section-home-5 {
+    padding: 50px 50px;
   }
 }
 
@@ -241,6 +469,15 @@
     font-size: 14px;
     padding: 5px 10px;
   }
+
+  #section-home-3 .home-card-men .home-learn-more-btn,
+  #section-home-3 .home-card-women .home-learn-more-btn {
+    margin: 0 50px 0 0;
+  }
+
+  #section-home-5 {
+    padding: 50px 50px;
+  }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -267,6 +504,15 @@
   .home-shop-btn {
     font-size: 14px;
     padding: 8px 15px;
+  }
+
+  #section-home-3 .home-card-men .home-learn-more-btn,
+  #section-home-3 .home-card-women .home-learn-more-btn {
+    margin: 0 100px 0 0;
+  }
+
+  #section-home-5 {
+    padding: 50px 100px;
   }
 }
 
@@ -295,5 +541,26 @@
   .home-shop-btn {
     font-size: 14px;
     padding: 15px 15px;
+  }
+
+  #section-home-3 .home-card-men .home-learn-more-btn,
+  #section-home-3 .home-card-women .home-learn-more-btn {
+    margin: 0 100px 0 0;
+  }
+
+  #section-home-5 {
+    padding: 50px 100px;
+  }
+}
+
+@media (min-width: 1501px) and (max-width: 2000px) {
+  #section-home-5 {
+    padding: 50px 100px;
+  }
+}
+
+@media (min-width: 1800px) and (max-width: 1990px) {
+  .section-home-3-card {
+    padding: 0 200px;
   }
 }
