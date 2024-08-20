@@ -98,7 +98,7 @@ const Header = () => {
                     Contact Us
                   </NavLink>
                 </li>
-                <li className="nav-item mx-3">
+                <li className="nav-item mx-3 mt-lg-0 mt-3">
                   <label className="search-container">
                     <input
                       className="form-control mr-sm-2 search-input"
@@ -115,7 +115,7 @@ const Header = () => {
             </div>
             <div className="mx-end">
               <ul className="navbar-nav align-items-center">
-                <NavLink to="" className="nav-link" activeClassName="active">
+                <NavLink to="" className="nav-link mt-lg-0 mt-3" activeClassName="active">
                   <i className="far fa-heart fs-24 me-md-2 mt-md-1"></i>
                 </NavLink>
                 <NavLink

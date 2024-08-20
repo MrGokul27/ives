@@ -1,21 +1,308 @@
-/* Example custom styles for the contact form */
-.container {
-    max-width: 600px;
-    margin: 0 auto;
+#section-contact-1 h2 {
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+}
+
+#section-contact-1 .contact-banner-para {
+  color: #767676;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#section-contact-1 .card {
+  background-color: #f3f3f3;
+  border-radius: 60px;
+}
+
+#section-contact-1 .bi-house {
+  color: #192c3d;
+  font-size: 22px;
+}
+
+#section-contact-1 span p {
+  color: #192c3d;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+#contact-card {
+  display: block;
+}
+
+#contact-card-mobile {
+  display: none;
+}
+
+#section-contact-2 h2 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+#section-contact-2 p {
+  color: #00000080;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+#section-contact-2 form {
+  background-color: #F3F3F3;
+  padding: 50px 30px;
+  border-radius: 12px;
+}
+
+#section-contact-2 .form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  margin-bottom: 30px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #999999;
+  appearance: none;
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border-bottom: 0;
+  /* border: var(--bs-border-width) solid var(--bs-border-color); */
+  border-radius: var(--bs-border-radius);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+form .form-mssg {
+  color: #515151;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+form .form-check-label {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.contact-submit-btn {
+  background-color: #192C3D;
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 31px;
+  border: 0;
+}
+
+.contact-submit-btn:hover {
+  background-color: #192C3D;
+  color: #FFFFFF;
+}
+
+#section-contact-2 .bi-geo-alt,
+#section-contact-2 .bi-telephone,
+#section-contact-2 .bi-envelope {
+  background-color: #192C3D;
+  color: #FFFFFF;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 22px;
+}
+
+#section-contact-2 .location-head1,
+#section-contact-2 .phone-head1,
+#section-contact-2 .email-head1 {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+#section-contact-2 .location-head2,
+#section-contact-2 .phone-head2,
+#section-contact-2 .email-head2 {
+  color: #00000080;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+#section-contact-3 .card {
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  min-height: 300px;
+  max-height: 400px;
+}
+
+#section-contact-3 span i {
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 12px 17px;
+}
+
+#section-contact-3 h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 37px;
+}
+
+#section-contact-3 p {
+  color: #515151;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  #section-contact-1 {
+    margin-top: 30% !important;
   }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
+
+  #contact-card {
+    display: none;
   }
-  
-  .form-control {
-    border-radius: 0;
-    box-shadow: none;
+
+  #contact-card-mobile {
+    display: block;
   }
-  
-  .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  #section-contact-1 {
+    margin-top: 20% !important;
   }
-  
+
+  #contact-card {
+    display: none;
+  }
+
+  #contact-card-mobile {
+    display: block;
+  }
+
+  #section-contact-1 h2 {
+    padding-top: 20px !important;
+  }
+
+  /* #section-contact-1 .position-absolute {
+    top: 37% !important;
+    left: 3%;
+  }
+
+  #section-contact-1 .contact-banner-para {
+    width: 70%;
+  }
+
+  #section-contact-1 h2 {
+    font-size: 28px;
+    line-height: 20px;
+  }
+
+  #section-contact-1 .contact-banner-para {
+    font-size: 16px;
+    line-height: 27px;
+  } */
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  #section-contact-1 {
+    margin-top: 15% !important;
+  }
+
+  #section-contact-1 .position-absolute {
+    top: 37% !important;
+    left: 3%;
+  }
+
+  #section-contact-1 .contact-banner-para {
+    width: 50%;
+  }
+
+  #section-contact-1 h2 {
+    font-size: 28px;
+    line-height: 20px;
+  }
+
+  #section-contact-1 .contact-banner-para {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  #section-contact-1 {
+    margin-top: 12% !important;
+  }
+
+  #section-contact-1 .position-absolute {
+    top: 37% !important;
+    left: 3%;
+  }
+
+  #section-contact-1 .contact-banner-para {
+    width: 40%;
+  }
+
+  #section-contact-1 h2 {
+    font-size: 34px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+  #section-contact-1 {
+    margin-top: 10% !important;
+  }
+
+  #section-contact-1 .position-absolute {
+    top: 42% !important;
+    left: 3%;
+  }
+
+  #section-contact-1 .contact-banner-para {
+    width: 35%;
+  }
+}
+
+@media (min-width: 1501px) and (max-width: 2000px) {
+  #section-contact-1 {
+    margin-top: 7% !important;
+    margin-left: 200px !important;
+    margin-right: 200px !important;
+  }
+
+  #section-contact-1 .position-absolute {
+    left: 8%;
+    top: 40% !important;
+  }
+
+  #section-contact-1 .contact-banner-para {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1501px) and (max-width: 1800px) {
+  #section-contact-1 .position-absolute {
+    left: 4%;
+    top: 45% !important;
+  }
+
+  #section-contact-1 .contact-banner-para {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1801px) and (max-width: 2000px) {
+  #section-contact-1 .position-absolute {
+    left: 8%;
+    top: 48% !important;
+  }
+
+  #section-contact-1 .contact-banner-para {
+    width: 40%;
+  }
+
+  #section-contact-2 form {
+    margin: 0 50px;
+  }
+}

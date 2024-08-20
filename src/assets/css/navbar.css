@@ -159,7 +159,7 @@
     width: 215px;
     height: 100%;
     z-index: 9999;
-    padding: 25px;
+    padding: 25px 5px;
     transform: translateX(-215px);
     transition: 0.5s ease-in-out;
     display: block;
@@ -192,6 +192,11 @@
 
   .nav-link {
     color: #ffffff !important;
+    font-size: 16px;
+  }
+
+  .navbar-nav input {
+    padding: 10px 10px 10px 40px;
   }
 
   .navbar .nav-item-mobile {
@@ -221,4 +226,76 @@
     font-size: 20px;
     margin-top: 15px;
   }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .navbar {
+    padding-left: 0 !important;
+  }
+
+  .navbar-nav .signup-btn {
+    margin-right: 0 !important;
+  }
+
+  .navbar li {
+    font-size: 16px;
+  }
+
+  .login-btn, .signup-btn {
+    font-size: 16px;
+  }
+
+  .signup-btn {
+    padding: 12px 15px;
+  }
+
+  .navbar-nav input {
+    padding: 10px 10px 10px 50px;
+  }
+
+  .logo-main {
+    max-width: 100px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+  .navbar {
+    padding-left: 0 !important;
+  }
+
+  .navbar-nav .signup-btn {
+    margin-right: 0 !important;
+  }
+
+  .navbar li {
+    font-size: 18px;
+  }
+
+  .login-btn, .signup-btn {
+    font-size: 18px;
+  }
+
+  .signup-btn {
+    padding: 12px 15px;
+  }
+
+  .navbar-nav input {
+    padding: 10px 40px 10px 50px;
+  }
+}
+
+@media (min-width: 1501px) and (max-width: 2000px) {
+  
 }
