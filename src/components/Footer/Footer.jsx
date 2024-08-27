@@ -55,7 +55,7 @@ const Footer = () => {
                     <h3 className="footer-heading-link">Store</h3>
                     <ul className="list-unstyled mt-4">
                       <li className="">
-                        <NavLink to="/men" className="footer-link">
+                        <NavLink to="/shop-men" className="footer-link">
                           Men
                         </NavLink>
                       </li>

@@ -146,6 +146,37 @@
   gap: 10px;
 }
 
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  background-color: white;
+  border-radius: 0;
+  top: 100%;
+}
+
+.dropdown-item {
+  color: #000;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.navbar-nav .dropdown-menu .active {
+  background-color: #192c3d;
+  color: #ffffff;
+}
+
+.navbar-nav .dropdown-menu .active:hover {
+  background-color: #192c3d;
+  color: #ffffff;
+}
+
 @media screen and (max-width: 991px) {
   .navbar-collapse.collapse:not(.show) {
     display: block;
@@ -229,15 +260,12 @@
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
-  
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
-  
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-  
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -253,7 +281,8 @@
     font-size: 16px;
   }
 
-  .login-btn, .signup-btn {
+  .login-btn,
+  .signup-btn {
     font-size: 16px;
   }
 
@@ -283,7 +312,8 @@
     font-size: 18px;
   }
 
-  .login-btn, .signup-btn {
+  .login-btn,
+  .signup-btn {
     font-size: 18px;
   }
 
@@ -297,5 +327,4 @@
 }
 
 @media (min-width: 1501px) and (max-width: 2000px) {
-  
 }

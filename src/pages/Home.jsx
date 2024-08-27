@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "../assets/css/home.css";
 import heroBackground from "../assets/images/home/home-background-image.webp";
 import Slider from "react-slick";
@@ -225,6 +225,17 @@ const Home = () => {
   };
   // *************************
 
+  /* Heart Icon Fill */
+  const [filledHearts, setFilledHearts] = useState({});
+
+  const handleHeartClick = (cardId) => {
+    setFilledHearts((prev) => ({
+      ...prev,
+      [cardId]: !prev[cardId],
+    }));
+  };
+  // *************************
+
   /* New Arrival Section */
   const handlePrevClick1 = () => {
     if (sliderRef1.current) sliderRef1.current.slickPrev();
@@ -383,8 +394,19 @@ const Home = () => {
                       <div className="home-card-price">{card.price}</div>
                     </div>
                     <Rate className="home-card-rating mt-3" />
-                    <div className="position-absolute card-add-to-icon">
-                      <i className="far fa-heart fs-24"></i>
+                    <div
+                      className="position-absolute card-add-to-icon"
+                      onClick={() => handleHeartClick(card.id)}
+                      style={{ cursor: "pointer" }}
+                    >
+                      <i
+                        className={`fa${
+                          filledHearts[card.id] ? "s" : "r"
+                        } fa-heart fs-24`}
+                        style={{
+                          color: filledHearts[card.id] ? "red" : "black",
+                        }}
+                      ></i>
                     </div>
                   </div>
                 ))}
@@ -397,7 +419,10 @@ const Home = () => {
       {/* End of Section */}
 
       {/* Our Categories Section */}
-      <section className="p-lg-5 p-3 py-md-0 py-5 lufga b_F9F9F9" id="section-home-3">
+      <section
+        className="p-lg-5 p-3 py-md-0 py-5 lufga b_F9F9F9"
+        id="section-home-3"
+      >
         <div className="container-fluid section-home-3-card">
           <div className="row">
             <div className="col-12 text-center">
@@ -518,8 +543,19 @@ const Home = () => {
                       </div>
                     </div>
                     <Rate className="home-card-rating mt-3" />
-                    <div className="position-absolute card-add-to-icon">
-                      <i className="far fa-heart fs-24"></i>
+                    <div
+                      className="position-absolute card-add-to-icon"
+                      onClick={() => handleHeartClick(card.id)}
+                      style={{ cursor: "pointer" }}
+                    >
+                      <i
+                        className={`fa${
+                          filledHearts[card.id] ? "s" : "r"
+                        } fa-heart fs-24`}
+                        style={{
+                          color: filledHearts[card.id] ? "red" : "black",
+                        }}
+                      ></i>
                     </div>
                   </div>
                 ))}
@@ -649,8 +685,19 @@ const Home = () => {
                       <div className="home-card-price">{card.price}</div>
                     </div>
                     <Rate className="home-card-rating mt-3" />
-                    <div className="position-absolute card-add-to-icon">
-                      <i className="far fa-heart fs-24"></i>
+                    <div
+                      className="position-absolute card-add-to-icon"
+                      onClick={() => handleHeartClick(card.id)}
+                      style={{ cursor: "pointer" }}
+                    >
+                      <i
+                        className={`fa${
+                          filledHearts[card.id] ? "s" : "r"
+                        } fa-heart fs-24`}
+                        style={{
+                          color: filledHearts[card.id] ? "red" : "black",
+                        }}
+                      ></i>
                     </div>
                   </div>
                 ))}

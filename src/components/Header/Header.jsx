@@ -80,14 +80,35 @@ const Header = () => {
                     Home
                   </NavLink>
                 </li>
-                <li className="nav-item mx-3">
+                <li className="nav-item mx-3 dropdown">
                   <NavLink
                     to="/shop"
-                    className="nav-link"
+                    className="nav-link dropdown-toggle"
                     activeClassName="active"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
                   >
-                    Shop
+                    Shop <i className="bi bi-chevron-down"></i>
                   </NavLink>
+                  <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <NavLink to="/shop-men" className="dropdown-item" activeClassName="active">
+                        Men
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/shop-women" className="dropdown-item" activeClassName="active">
+                        Women
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/shop-accessories" className="dropdown-item" activeClassName="active">
+                        Accessories
+                      </NavLink>
+                    </li>
+                  </ul>
                 </li>
                 <li className="nav-item mx-3">
                   <NavLink
