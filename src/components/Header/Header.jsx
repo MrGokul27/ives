@@ -136,7 +136,7 @@ const Header = () => {
             </div>
             <div className="mx-end">
               <ul className="navbar-nav align-items-center">
-                <NavLink to="" className="nav-link mt-lg-0 mt-3" activeClassName="active">
+                <NavLink to="/wishlist" className="nav-link mt-lg-0 mt-3" activeClassName="active">
                   <i className="far fa-heart fs-24 me-md-2 mt-md-1"></i>
                 </NavLink>
                 <NavLink

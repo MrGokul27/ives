@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import emailjs from "emailjs-com";
 import "../assets/css/contact.css";
 import MobileApp from "../components/MobileApp";
 import contactBanner from "../assets/images/contact/Contact-Banner-Image.webp";
@@ -32,28 +33,66 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    subject: "",
     message: "",
+    terms: false,
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value, type, checked } = e.target;
     setFormData({
       ...formData,
-      [name]: value,
+      [name]: type === "checkbox" ? checked : value,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here, e.g., send form data to a server
-    console.log(formData);
-    alert("Form submitted!");
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+
+    if (!formData.terms) {
+      alert("Please agree to the terms and conditions.");
+      return;
+    }
+
+    const serviceId = "service_4ml3pkw";
+    const templateId = "template_86pscs8";
+    const userId = "CWf2hncSbboocvCXN";
+
+    emailjs.send(serviceId, templateId, formData, userId).then(
+      (response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        alert("Message sent successfully!");
+      },
+      (err) => {
+        console.error("FAILED...", err);
+        alert("Failed to send the message. Please try again.");
+      }
+    );
   };
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
+
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value,
+  //   });
+  // };
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log(formData);
+  //   alert("Form submitted!");
+  //   setFormData({
+  //     name: "",
+  //     email: "",
+  //     message: "",
+  //   });
+  // };
 
   return (
     <>
@@ -195,7 +234,7 @@ const Contact = () => {
                 <div className="mb-3">
                   <label htmlFor="message" className="form-label fw-semibold">
                     Message{" "}
-                    <span className="form-mssg">(Maximum 100 Word)</span>
+                    <span className="form-mssg">(Maximum 100 Words)</span>
                   </label>
                   <textarea
                     className="form-control"

@@ -129,7 +129,9 @@
   border-radius: 50%;
 }
 
-.card-add-to-icon {
+#section-home-2 .card-add-to-icon,
+#section-home-4 .card-add-to-icon,
+#section-home-6 .card-add-to-icon {
   top: 5%;
   right: 20%;
 }

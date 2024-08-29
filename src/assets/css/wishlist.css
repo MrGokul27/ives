@@ -1,0 +1,110 @@
+#section-wishlist-1 .bi-house {
+  color: #192c3d;
+  font-size: 22px;
+}
+
+#section-wishlist-1 span p {
+  color: #192c3d;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+#section-wishlist-2 .fa-heart {
+  color: #767574;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.card-add-to-icon {
+  top: 5%;
+  right: 8%;
+}
+
+#section-wishlist-2 .home-card-title,
+#section-wishlist-2 .home-card-price {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+.wishlist-change-buttons .wishlist-previous-btn,
+.wishlist-change-buttons .wishlist-next-btn {
+  color: #192c3d;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  border: 0.82px solid var(--prime, #192c3d);
+  border-radius: 6px;
+  padding: 12px 16px;
+}
+
+.wishlist-change-buttons .wishlist-previous-btn:hover,
+.wishlist-change-buttons .wishlist-next-btn:hover {
+  background-color: #fff;
+}
+
+.wishlist-change-buttons .bi-arrow-left,
+.wishlist-change-buttons .bi-arrow-right {
+  color: #192c3d;
+  font-size: 20px;
+  padding: 5px 10px 0 10px;
+}
+
+.wishlist-change-buttons .shop-1-btn,
+.wishlist-change-buttons .shop-2-btn,
+.wishlist-change-buttons .shop-3-btn,
+.wishlist-change-buttons .shop-4-btn {
+  color: #192c3d;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  border: 0.82px solid var(--prime, #192c3d);
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 0 10px 0 0;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  #section-wishlist-1 {
+    margin-top: 30% !important;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  #section-wishlist-1 {
+    margin-top: 20% !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  #section-wishlist-1 {
+    margin-top: 15% !important;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  #section-wishlist-1 {
+    margin-top: 12% !important;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+  #section-wishlist-1 {
+    margin-top: 10% !important;
+  }
+}
+
+@media (min-width: 1501px) and (max-width: 2000px) {
+  #section-wishlist-1 {
+    margin-top: 7% !important;
+    margin-left: 200px !important;
+    margin-right: 200px !important;
+  }
+
+  #section-wishlist-2 {
+    margin-left: 200px !important;
+    margin-right: 200px !important;
+  }
+}
