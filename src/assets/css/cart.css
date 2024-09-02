@@ -150,6 +150,21 @@
     font-size: 20px !important;
 }
 
+#summary-details .cart-checkout-btn {
+  color: #FFFFFF;
+  background-color: #192C3D;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 16px 20px;
+  border-radius: 8px;
+}
+
+#section-cart-1 .coupen-code .bi-arrow-right {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
 @media (min-width: 300px) and (max-width: 600px) {
   #section-cart-1 {
     margin-top: 30% !important;

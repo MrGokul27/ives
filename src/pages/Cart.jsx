@@ -79,13 +79,10 @@ const Cart = () => {
                   <div
                     key={cartCard.id}
                     className="row align-items-center"
-                    id="card-items-border-btm">
+                    id="card-items-border-btm"
+                  >
                     <div className="col-md-2 col-4">
-                      <img
-                        src={cartCard.image}
-                        alt=""
-                        className="img-fluid"
-                      />
+                      <img src={cartCard.image} alt="" className="img-fluid" />
                     </div>
                     <div className="col-md-10 col-12">
                       <div className="d-flex justify-content-between mt-md-0 mt-4">
@@ -114,9 +111,7 @@ const Cart = () => {
                           </p>
                           <i
                             className="bi bi-plus"
-                            onClick={() =>
-                              handleQuantityChange(cartCard.id, 1)
-                            }
+                            onClick={() => handleQuantityChange(cartCard.id, 1)}
                           ></i>
                         </div>
                       </div>
@@ -125,9 +120,11 @@ const Cart = () => {
                 ))}
               </div>
               <div className="card mt-5 text-center card-discount">
-                <p className="mb-0"><span className="me-3">% </span>10% Instant Discount with Federal Bank Debit Cards on a min spend of ₹15000. TCA</p>
+                <p className="mb-0">
+                  <span className="me-3">% </span>10% Instant Discount with
+                  Federal Bank Debit Cards on a min spend of ₹15000. TCA
+                </p>
               </div>
-
             </div>
             <div className="col-md-4" id="summary-details">
               <div className="card px-4 py-3">
@@ -139,7 +136,9 @@ const Cart = () => {
                   </div>
                   <div className="d-flex justify-content-between mt-3">
                     <h3>Discount (-20%)</h3>
-                    <h4><span>-₹113</span></h4>
+                    <h4>
+                      <span>-₹113</span>
+                    </h4>
                   </div>
                   <div className="d-flex justify-content-between mt-3">
                     <h3>Delivery Fee</h3>
@@ -155,18 +154,30 @@ const Cart = () => {
                       placeholder="Add promo code"
                       aria-label="Search"
                     />
-                    <button type="button" className="apply-btn border-0 mt-md-0 mt-3">Apply</button>
+                    <button
+                      type="button"
+                      className="apply-btn border-0 mt-md-0 mt-3"
+                    >
+                      Apply
+                    </button>
                   </div>
                 </div>
                 <div className="coupen-code mt-3">
-                  <h2>Total</h2>
+                  <div className="d-flex justify-content-between mt-3">
+                    <h2>Total</h2>
+                    <h4>₹3500</h4>
+                  </div>
+                  <Link to="/checkout">
+                  <button className="btn cart-checkout-btn w-100 mt-3">
+                    Go to Checkout <i className="bi bi-arrow-right"></i>
+                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
 
       {/* <div>
         <h1>Cart</h1>

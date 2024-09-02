@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -11,13 +11,16 @@ import Cart from "./pages/Cart";
 import Wishlist from "./pages/Wishlist";
 import Checkout from "./pages/Checkout";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./components/Scroll_to_top";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 function App() {
+  
   return (
     <div>
       <Header />
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
