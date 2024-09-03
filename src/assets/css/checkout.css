@@ -157,6 +157,7 @@
   padding-top: 10%;
 }
 
+/* Order Summary  */
 #section-checkout-1 .checkout-order-summary h2 {
   font-size: 24px;
   font-weight: 600;
@@ -249,6 +250,7 @@
   font-weight: 500;
   line-height: 23px;
 }
+/* *********************** */
 
 #section-checkout-1 .info-and-shipping .back-to-cart-btn {
   color: #ffffff;
@@ -415,7 +417,7 @@
 }
 
 .successful-modal .modal-header .bi-check-circle-fill {
-  color: #01AB31;
+  color: #01ab31;
   font-size: 18px;
 }
 
@@ -435,22 +437,22 @@
 }
 
 .successful-modal .modal-body h3 {
-  color: #0A0D13;
+  color: #0a0d13;
   font-size: 22px;
   font-weight: 600;
   line-height: 28px;
 }
 
 .successful-modal .modal-body h4 {
-  color: #9DA3A1;
+  color: #9da3a1;
   font-size: 16px;
   font-weight: 500;
   line-height: 12px;
 }
 
 .successful-modal .modal-body .track-order-btn {
-  color: #FFFFFF;
-  background-color: #192C3D;
+  color: #ffffff;
+  background-color: #192c3d;
   border-radius: 8px;
   padding: 10px 0;
   font-size: 18px;
