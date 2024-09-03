@@ -8,7 +8,6 @@ import arrival2 from "../assets/images/home/new-arrival-image (2).png";
 import arrival3 from "../assets/images/home/new-arrival-image (3).png";
 
 import { fetchProducts } from "../services/api";
-import Product from "../components/Product/Product";
 
 const cardData = [
   {
