@@ -369,15 +369,17 @@ const ShopMen = () => {
                       className="home-slider-card border-0 position-relative"
                       key={card.id}
                     >
-                      <img
-                        src={card.imageUrl}
-                        alt=""
-                        className="img-fluid w-100"
-                      />
-                      <div className="d-flex justify-content-between mt-4">
-                        <div className="home-card-title">{card.title}</div>
-                        <div className="home-card-price">{card.price}</div>
-                      </div>
+                      <Link to="/product" className="text-decoration-none">
+                        <img
+                          src={card.imageUrl}
+                          alt=""
+                          className="img-fluid w-100"
+                        />
+                        <div className="d-flex justify-content-between mt-4">
+                          <div className="home-card-title">{card.title}</div>
+                          <div className="home-card-price">{card.price}</div>
+                        </div>
+                      </Link>
                       <Rate className="home-card-rating mt-3" />
                       <div
                         className="position-absolute card-add-to-icon"

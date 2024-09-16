@@ -11,15 +11,15 @@ import Wishlist from "./pages/Wishlist";
 import Checkout from "./pages/Checkout";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/Scroll_to_top";
+import NotFound from "./components/NotFound";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 function App() {
-  
   return (
     <div>
       <Header />
-      <ScrollToTop/>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -29,6 +29,8 @@ function App() {
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/contact" element={<Contact />} />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>

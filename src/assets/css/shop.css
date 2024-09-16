@@ -158,6 +158,7 @@
 
 #section-shop-1 .home-card-title,
 #section-shop-1 .home-card-price {
+  color: #000000;
   font-size: 22px;
   font-weight: bold;
   line-height: 28px;
