@@ -96,7 +96,7 @@ const About = () => {
                       <i className="bi bi-house"></i>
                     </Link>
                     <i className="bi bi-chevron-right mx-3"></i>
-                    <Link to="/contact" className="text-decoration-none">
+                    <Link to="/about" className="text-decoration-none">
                       <p className="m-0">About us</p>
                     </Link>
                   </span>

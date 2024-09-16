@@ -151,6 +151,39 @@
   color: #be9e6f !important;
 }
 
+#section-home-2 .product-color-name i,
+#section-home-4 .product-color-name i,
+#section-home-6 .product-color-name i {
+  font-size: 26px;
+  padding-right: 20px;
+}
+
+#section-home-2 .product-color-name .circle-fill-1,
+#section-home-4 .product-color-name .circle-fill-1,
+#section-home-6 .product-color-name .circle-fill-1 {
+  color: #000000;
+}
+
+#section-home-2 .product-color-name .circle-fill-2,
+#section-home-4 .product-color-name .circle-fill-2,
+#section-home-6 .product-color-name .circle-fill-2 {
+  color: #aaa198;
+}
+
+#section-home-2 .product-color-name .circle-fill-3,
+#section-home-4 .product-color-name .circle-fill-3,
+#section-home-6 .product-color-name .circle-fill-3 {
+  color: #ad4141;
+}
+
+#section-home-2 .rate-review-count span,
+#section-home-4 .rate-review-count span,
+#section-home-6 .rate-review-count span {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 23px;
+}
+
 .home-categories-btn {
   border: 1.5px solid #bfa77b;
   background-color: #be9e6f1a;

@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import "../assets/css/home.css";
 import heroBackground from "../assets/images/home/home-background-image.webp";
+import heroBackground1 from "../assets/images/home/home-background-image1.webp";
 import Slider from "react-slick";
 import { Rate } from "antd";
 import Aos from "aos";
@@ -305,7 +306,7 @@ const Home = () => {
                   </div>
                   <div className="carousel-item">
                     <img
-                      src={heroBackground}
+                      src={heroBackground1}
                       alt=""
                       className="img-fluid w-100"
                       id="hero-background-img"
@@ -376,7 +377,7 @@ const Home = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-12 mt-5">
+            <div className="col-12 mt-5 border-0">
               {/* Carousel Slider */}
               <Slider ref={sliderRef1} {...settings}>
                 {cardData.map((card) => (
@@ -393,7 +394,15 @@ const Home = () => {
                       <div className="home-card-title">{card.title}</div>
                       <div className="home-card-price">{card.price}</div>
                     </div>
-                    <Rate className="home-card-rating mt-3" />
+                    <div className="rate-review-count">
+                      <Rate className="home-card-rating mt-3 me-3" />
+                      <span>(13)</span>
+                    </div>
+                    <div className="mt-3 product-color-name">
+                      <i class="bi bi-circle-fill circle-fill-1"></i>
+                      <i class="bi bi-circle-fill circle-fill-2"></i>
+                      <i class="bi bi-circle-fill circle-fill-3"></i>
+                    </div>
                     <div
                       className="position-absolute card-add-to-icon"
                       onClick={() => handleHeartClick(card.id)}
@@ -419,10 +428,7 @@ const Home = () => {
       {/* End of Section */}
 
       {/* Our Categories Section */}
-      <section
-        className="p-lg-5 p-3 py-md-0 py-5 lufga b_F9F9F9"
-        id="section-home-3"
-      >
+      <section className="p-lg-5 p-3 py-md-0 py-5 lufga b_F9F9F9" id="section-home-3">
         <div className="container-fluid section-home-3-card">
           <div className="row">
             <div className="col-12 text-center">
@@ -542,7 +548,15 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                    <Rate className="home-card-rating mt-3" />
+                    <div className="rate-review-count">
+                      <Rate className="home-card-rating mt-3 me-3" />
+                      <span>(13)</span>
+                    </div>
+                    <div className="mt-3 product-color-name">
+                      <i class="bi bi-circle-fill circle-fill-1"></i>
+                      <i class="bi bi-circle-fill circle-fill-2"></i>
+                      <i class="bi bi-circle-fill circle-fill-3"></i>
+                    </div>
                     <div
                       className="position-absolute card-add-to-icon"
                       onClick={() => handleHeartClick(card.id)}
@@ -684,7 +698,15 @@ const Home = () => {
                       <div className="home-card-title">{card.title}</div>
                       <div className="home-card-price">{card.price}</div>
                     </div>
-                    <Rate className="home-card-rating mt-3" />
+                    <div className="rate-review-count">
+                      <Rate className="home-card-rating mt-3 me-3" />
+                      <span>(13)</span>
+                    </div>
+                    <div className="mt-3 product-color-name">
+                      <i class="bi bi-circle-fill circle-fill-1"></i>
+                      <i class="bi bi-circle-fill circle-fill-2"></i>
+                      <i class="bi bi-circle-fill circle-fill-3"></i>
+                    </div>
                     <div
                       className="position-absolute card-add-to-icon"
                       onClick={() => handleHeartClick(card.id)}
