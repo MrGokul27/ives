@@ -4,6 +4,7 @@ import heroBackground from "../assets/images/home/home-background-image.webp";
 import heroBackground1 from "../assets/images/home/home-background-image1.webp";
 import Slider from "react-slick";
 import { Rate } from "antd";
+import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "slick-carousel/slick/slick.css";
@@ -306,7 +307,7 @@ const Home = () => {
                   </div>
                   <div className="carousel-item">
                     <img
-                      src={heroBackground1}
+                      src={heroBackground}
                       alt=""
                       className="img-fluid w-100"
                       id="hero-background-img"
@@ -428,7 +429,10 @@ const Home = () => {
       {/* End of Section */}
 
       {/* Our Categories Section */}
-      <section className="p-lg-5 p-3 py-md-0 py-5 lufga b_F9F9F9" id="section-home-3">
+      <section
+        className="p-lg-5 p-3 py-md-0 py-5 lufga b_F9F9F9"
+        id="section-home-3"
+      >
         <div className="container-fluid section-home-3-card">
           <div className="row">
             <div className="col-12 text-center">
@@ -453,7 +457,11 @@ const Home = () => {
                   Discover the latest in men's fashion at Ive's Clothing. Shop
                   quality and stylish apparel for every occasion
                 </p>
-                <button className="btn home-learn-more-btn">Learn more</button>
+                <Link to={"/shop-men"}>
+                  <button className="btn home-learn-more-btn">
+                    Learn more
+                  </button>
+                </Link>
               </div>
             </div>
             <div className="col-xl-4 col-lg-5 col-md-6 col-12 mt-md-0 mt-3">
@@ -467,7 +475,11 @@ const Home = () => {
                   Explore the latest women's fashion at Ive's Clothing. Find
                   stylish and quality apparel for every occasion
                 </p>
-                <button className="btn home-learn-more-btn">Learn more</button>
+                <Link to={"/shop-women"}>
+                  <button className="btn home-learn-more-btn">
+                    Learn more
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -486,9 +498,11 @@ const Home = () => {
                       Clothing. Discover quality and stylish pieces for every
                       occasion.
                     </p>
-                    <button className="btn home-learn-more-btn">
-                      Learn more
-                    </button>
+                    <Link to={"/shop-accessories"}>
+                      <button className="btn home-learn-more-btn">
+                        Learn more
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>

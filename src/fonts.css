@@ -1,11 +1,10 @@
 @font-face {
-    font-family: 'Lufga';
-    src: url('../public/fonts/LufgaRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  .lufga {
-    font-family: 'Lufga', sans-serif;
-  }
-  
+  font-family: "Lufga";
+  src: url("../public/fonts/LufgaRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.lufga {
+  font-family: "Lufga", sans-serif;
+}
